@@ -1,0 +1,20 @@
+version: '3'
+services:
+  app1:
+    build: ./app1
+    ports:
+      - "5000:5000"
+    command: python app.py 
+  app2:
+    build: ./app2
+    ports:
+      - "5001:5001"
+    command: python form.py 
+  app3:
+    build: ./app3
+    ports:
+      - "5002:5002"
+    command: python jinja_temp.py 
+networks:
+  my-network:
+    driver: bridge

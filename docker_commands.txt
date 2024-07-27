@@ -1,0 +1,47 @@
+pip list 
+---->list the requirement.txt files library
+
+docker --version
+-->This shows the version of docker
+
+docker ps
+-->This shows us a list of all the running container
+
+docker ps -a 
+-->Shows all the container, stopped or running
+
+docker ps -l 
+--> show all latest container
+
+docker ps -q
+-->Shows only id of container
+
+docker pull
+-->This command allows you to pull any image which is present in docker or Dockerhub,
+    by default, it pulls the latest image, but you can mention the version of image
+
+docker stop <container_id>
+-->command is used to stop a container if it has crashed or you want to another one
+
+docker star <container_id>
+-->command is used to start a container again
+
+docker rm
+-->to delete a container. by default when a container is created, it get an ID as well as 
+    imaginary name .you can set container name
+
+docker rmi <container_id>
+--> to delete image in docker. you can delete the image which are useless from the docker local storage 
+    so you can free up some space
+
+docker image
+-->list the images
+
+docker exec
+-->to run new command in running container
+
+docker exec -d 
+-->run the command in background
+
+docker run -d -p <port_host >containe name
+docker run -p [host_port]:[container_port] [docker_image]

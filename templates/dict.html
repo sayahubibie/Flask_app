@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dictionary List</h1>
+    <table border="5">
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>TRAINETER</th>
+        </tr>
+        {% for user_id, value in dict_user.items() %}
+        <tr>
+            <th>{{user_id}}</th>
+            <th>{{value.name}}</th>
+            <th>{{value.age}}</th>
+            <th>{{value.Trainer}}</th>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
