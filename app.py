@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/home')
 def home():
-    return <h1>"Hello Flask App.....!"</h1>
+    return "Hello Flask App"
 
 @app.route('/<name>/<int:age>')
 def test(name,age):
@@ -65,7 +65,7 @@ def aboutpage():
     
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0',port=5000)
+    app.run()
 
 
 #app.run(debug=True)

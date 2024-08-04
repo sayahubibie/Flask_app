@@ -7,11 +7,19 @@ WORKDIR /app
 # Copy all the current directory content into the container at /app
 COPY . /app
 
+
 #Install any needed packages specified in requirement.txt
 RUN pip install -r requirement.txt
 
-#EXPOSE  5000 5001 5002 5003
-EXPOSE 3000
 
-CMD python jinja_temp.py
+
+#EXPOSE  5000 5001 5002 5003
+EXPOSE 9001
+
+# ENV FLASK_APP = app.py
+
+#CMD python jinja_temp.py
+CMD ["python","jinja_temp.py"]
+
+
 
